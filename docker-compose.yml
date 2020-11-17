@@ -1,0 +1,13 @@
+version: '3'
+services:
+  server:
+    build: .
+    volumes:
+      - "./work:/home/rstudio/work"
+    ports:
+      - "8787:8787"
+    restart: always
+    tty: true
+    stdin_open: true
+    env_file:
+      - server.env
