@@ -3,7 +3,7 @@ services:
   server:
     build: .
     volumes:
-      - "./work:/home/rstudio/work"
+      - "./work:/home/rstudio/kitematic"
     ports:
       - "8787:8787"
     restart: always
